@@ -67,8 +67,8 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
 
     // On-device video engine: scan (volumedetect / scene) + cut (crop 9:16).
-    // ffmpeg-kit-full 6.0.LTS — on-device ffmpeg, no server, no upload.
-    implementation("com.arthenica:ffmpeg-kit-full:6.0.LTS")
+    // ffmpeg-kit-full 6.0-2 — on-device ffmpeg, no server, no upload.
+    implementation("com.arthenica:ffmpeg-kit-full:6.0-2")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
