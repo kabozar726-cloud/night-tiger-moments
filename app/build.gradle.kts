@@ -67,8 +67,8 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
 
     // On-device video engine: scan (volumedetect / scene) + cut (crop 9:16).
-    // ffmpeg-kit-full 6.0-2 — on-device ffmpeg, no server, no upload.
-    implementation("com.arthenica:ffmpeg-kit-full:6.0-2")
+    // The arthenica versions were removed from Maven Central; this is the maintained fork 8.1.9 with the same Java API.
+    implementation("dev.ffmpegkit-maintained:ffmpeg-kit-full:8.1.9")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
