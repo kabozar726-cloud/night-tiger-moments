@@ -54,7 +54,7 @@ object MomentScanner {
     fun hasAudio(file: File): Boolean {
         return try {
             val info = FFprobeKit.getMediaInformation(file.absolutePath)
-            info.mediaInformation?.streams?.any { it.codecType == "audio" } ?: false
+            info.mediaInformation?.streams?.any { it.type == "audio" } ?: false
         } catch (e: Exception) {
             false
         }
